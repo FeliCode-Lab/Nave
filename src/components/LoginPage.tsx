@@ -15,16 +15,26 @@ export function LoginPage({ onLogin }: LoginPageProps) {
   const [error, setError] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setError('');
-    
-    // Validação com perfil pré-definido
-    if (username === 'lucas' && password === '@admin') {
-      onLogin();
-    } else {
-      setError('Usuário ou senha incorretos');
-    }
-  };
+  e.preventDefault();
+  setError('');
+
+  // Validação com perfis pré-definidos
+  if (username === 'lucas' && password === '@admin') {
+    onLogin();
+  } else if (username === 'vinicius' && password === '@admin') {
+    onLogin();
+  } else if (username === 'justin' && password === '@admin') {
+    onLogin();
+  } else if (username === 'priscilla' && password === '@admin') {
+    onLogin();
+  } else if (username === 'gustavo' && password === '@admin') {
+    onLogin();
+  } else if (username === 'rafael' && password === '@admin') {
+    onLogin();
+  } else {
+    setError('Usuário ou senha incorretos');
+  }
+};
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black p-4">

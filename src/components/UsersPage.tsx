@@ -9,14 +9,13 @@ import { useState } from 'react';
 // Dados de usuários cadastrados
 const registeredUsers = [
   { id: 1, name: 'Lucas', email: 'lucas@navemae.com', role: 'Admin', status: 'online', company: 'QuantumCert' },
-  { id: 2, name: 'Maria Silva', email: 'maria@navemae.com', role: 'Manager', status: 'online', company: 'BikiLock' },
-  { id: 3, name: 'João Santos', email: 'joao@navemae.com', role: 'User', status: 'offline', company: 'QuantumCert' },
-  { id: 4, name: 'Ana Costa', email: 'ana@navemae.com', role: 'User', status: 'online', company: 'BikiLock' },
-  { id: 5, name: 'Pedro Lima', email: 'pedro@navemae.com', role: 'Manager', status: 'offline', company: 'QuantumCert' },
-  { id: 6, name: 'Carla Souza', email: 'carla@navemae.com', role: 'User', status: 'online', company: 'BikiLock' },
-  { id: 7, name: 'Bruno Oliveira', email: 'bruno@navemae.com', role: 'Admin', status: 'online', company: 'QuantumCert' },
-  { id: 8, name: 'Julia Martins', email: 'julia@navemae.com', role: 'Manager', status: 'offline', company: 'BikiLock' },
+  { id: 2, name: 'Vinicius Monteiro', email: 'vinicius@navemae.com', role: 'User', status: 'online', company: 'QuantumCert' },
+  { id: 3, name: 'Justin Melo', email: 'justin@navemae.com', role: 'User', status: 'online', company: 'BikiLock' },
+  { id: 4, name: 'Priscilla Xavier', email: 'priscilla@navemae.com', role: 'User', status: 'online', company: 'QuantumCert' },
+  { id: 5, name: 'Gustavo', email: 'gustavo@navemae.com', role: 'User', status: 'online', company: 'BikiLock' },
+  { id: 6, name: 'Rafael', email: 'rafael@navemae.com', role: 'User', status: 'online', company: 'QuantumCert' },
 ];
+
 
 export function UsersPage() {
   const [searchTerm, setSearchTerm] = useState('');
